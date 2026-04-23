@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Patung Landu Meha - Portfolio</title>
+    <meta name="description" content="Portfolio of Richard Patung Landu Meha - Administration Office Professional.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Phosphor Icons (for modern icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+    <!-- Custom Cursor & Scroll Progress -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <header id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Richard P. <span>L. Meha</span></a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills & Certificates</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button id="theme-toggle" class="theme-btn" title="Change Theme">
+                    <i class="ph ph-moon"></i>
+                </button>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text fade-in-up">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="name">Richard Patung Landu Meha</h1>
+                <h2 class="role">Administration Office & Digital Marketing</h2>
+                <p class="summary">A multi-talented professional with excellent skills in operational administration.
+                    Officially certified by BNSP as a <strong>Digital Marketer</strong> specializing in modern marketing
+                    strategies, SEO, persuasive copywriting, and conversion optimization.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#experience" class="btn btn-secondary">View Experience</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-up delay-1">
+                <div class="glass-card hero-stats"
+                    onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})"
+                    style="cursor: pointer;">
+                    <div class="stat">
+                        <i class="ph-fill ph-briefcase"></i>
+                        <h3 id="stat-experience" data-label="+ Years">7+ Years</h3>
+                        <p>Work Experience</p>
+                    </div>
+                </div>
+                <div class="glass-card hero-stats"
+                    onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})"
+                    style="cursor: pointer;">
+                    <div class="stat">
+                        <i class="ph-fill ph-users"></i>
+                        <h3>150+</h3>
+                        <p>Personnel Coordinated</p>
+                    </div>
+                </div>
+                <div class="glass-card hero-stats"
+                    onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'})"
+                    style="cursor: pointer;">
+                    <div class="stat">
+                        <i class="ph-fill ph-certificate"></i>
+                        <h3 id="stat-certificates">6+</h3>
+                        <p>Certifications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="glow-bg"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>About Me</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-grid fade-in-up">
+                <div class="about-photo glass-panel">
+                    <img src="images/foto-profil.jpg" alt="Profile Photo" class="profile-img" style="cursor:pointer;"
+                        data-gallery="images/foto-profil.jpg,images/foto-profil-2.jpg,images/foto-profil-3.jpg,images/foto-profil-4.mp4"><br>
+                    <p style="text-align:center; font-size:0.8rem; margin-top:10px; color:var(--text-secondary);"></p>
+                </div>
+                <div class=" about-text glass-panel">
+                    <p>I am a professional in <strong>Office Administration</strong> with reliable skills in daily
+                        operational management, scheduling, employee databases, and comprehensive management reporting.
+                    </p>
+                    <p>In addition to administrative expertise, I am a <strong>BNSP Certified Digital Marketer</strong>
+                        who is passionate about the digital marketing world. I specialize in crafting innovative
+                        marketing strategies combining <strong>SEO</strong>, compelling <em>copywriting</em>, and
+                        structured social media campaigns. My approach is always data-driven to optimize market reach
+                        and increase conversions.</p>
+                    <p>My main focus is combining office managerial efficiency with the power of digital strategy to
+                        create a productive work ecosystem, while simultaneously driving brand growth for the company.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-alt">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Professional Experience</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="timeline">
+                <!-- Job 3 -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <div class="job-photo">
+                            <img src="images/pengalaman3-1.jpg"
+                                onerror="this.src='https://placehold.co/600x250/1F2937/06B6D4?text=Work+Activity'"
+                                alt="Activity" class="exp-img"
+                                data-gallery="images/pengalaman3-1.jpg,images/pengalaman3-2.jpg,images/pengalaman3-3.jpg,images/pengalaman3-4.jpg,images/pengalaman3-5.mp4,images/pengalaman3-6.mp4">
+                        </div>
+                        <span class="timeline-date">2021 - 2026</span>
+                        <h3 class="job-title">Security Division Administration</h3>
+                        <h4 class="company">PT. Provices Indonesia - Ministry of Trade RI</h4>
+                        <ul class="job-duties">
+                            <li>Managed operational and personnel administration including personnel data control,
+                                document archiving, and structured database updating.</li>
+                            <li>Developed operational work schedules, monitored work, and ensured activities were
+                                effective according to organizational standards.</li>
+                            <li>Managed attendance, timesheets, and payroll administration as a basis for
+                                attendance/payment control.</li>
+                            <li>Prepared periodic operational and administrative reports for management evaluation.</li>
+                            <li>Coordinated and monitored the performance of ±150 personnel spread across 10 operational
+                                buildings.</li>
+                            <li>Managed the administration of operational needs, goods requests, and documentation
+                                control.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <div class="job-photo">
+                            <img src="images/pengalaman2-1.jpg"
+                                onerror="this.src='https://placehold.co/600x250/1F2937/06B6D4?text=Work+Activity'"
+                                alt="Activity" class="exp-img"
+                                data-gallery="images/pengalaman2-1.jpg,images/pengalaman2-2.jpg,images/pengalaman2-3.jpg,images/pengalaman2-4.jpg,images/pengalaman2-5.mp4,images/pengalaman2-6.mp4">
+                        </div>
+                        <span class="timeline-date">2019 - 2021</span>
+                        <h3 class="job-title">Security Division Administration</h3>
+                        <h4 class="company">PT. Provices Indonesia - The Wave Apartment, South Jakarta</h4>
+                        <ul class="job-duties">
+                            <li>Managed operational administration, personnel, document archiving, and personnel
+                                databases.</li>
+                            <li>Developed operational schedules, attendance recaps, timesheets, and employee payroll.
+                            </li>
+                            <li>Compiled periodic reports as evaluation material and reporting to User/Management.</li>
+                            <li>Processed goods requests and controlled documentation systematically.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 1 -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <div class="job-photo">
+                            <img src="images/pengalaman1-1.jpg"
+                                onerror="this.src='https://placehold.co/600x250/1F2937/06B6D4?text=Work+Activity'"
+                                alt="Activity" class="exp-img"
+                                data-gallery="images/pengalaman1-1.jpg,images/pengalaman1-2.jpg,images/pengalaman1-3.jpg,images/pengalaman1-4.jpg,images/pengalaman1-5.mp4,images/pengalaman1-6.mp4">
+                        </div>
+                        <span class="timeline-date">2018 - 2019</span>
+                        <h3 class="job-title">Security Guard</h3>
+                        <h4 class="company">PT. Uremessing Guard - Department 18th Rasuna Said, South Jakarta</h4>
+                        <ul class="job-duties">
+                            <li>Executed building area security and guarded entry access as well as guest reception.
+                            </li>
+                            <li>Conducted routine patrols and checked operational areas.</li>
+                            <li>Monitored work environment activities and prevented potential disturbances.</li>
+                            <li>Prepared security activity reports via WhatsApp Group for leadership.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Academic History</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="education-card glass-panel fade-in-up">
+                <div class="edu-header">
+                    <i class="ph-fill ph-graduation-cap edu-icon"></i>
+                    <div>
+                        <h3 class="degree">Bachelor of Islamic Economics (S.E.)</h3>
+                        <h4 class="university">School of Islamic Economics and Business (STEBIS) Nur Ilmi Al-Ismailiyun
+                        </h4>
+                    </div>
+                </div>
+                <div class="edu-details">
+                    <span class="edu-date"><i class="ph ph-calendar-blank"></i> 2021 - 2024</span>
+                    <span class="edu-gpa"><i class="ph ph-star"></i> GPA: 3.8</span>
+                </div>
+                <div class="edu-courses">
+                    <strong>Relevant coursework:</strong>
+                    <div class="pill-container">
+                        <span class="pill">Administration</span>
+                        <span class="pill">Management</span>
+                        <span class="pill">Operations</span>
+                        <span class="pill">Basic Accounting</span>
+                        <span class="pill">Business Communication</span>
+                    </div>
+                </div>
+                <div class="edu-photo" style="margin-top: 30px; border-radius: 12px; overflow: hidden;">
+                    <img src="images/akademik-1.jpg"
+                        onerror="this.src='https://placehold.co/800x300/1F2937/06B6D4?text=Academic+Activity'"
+                        alt="Academic Photo" class="edu-img"
+                        style="width:100%; height:300px; object-fit:cover; display:block; cursor:pointer;"
+                        data-gallery="images/akademik-1.jpg,images/akademik-2.jpg,images/akademik-3.jpg,images/akademik-4.jpg,images/akademik-5.mp4,images/akademik-6.mp4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Certificates Section -->
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Certificates & Skills</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="certifications-grid">
+                <!-- Cert 1 (2026) -->
+                <div class="cert-card glass-card fade-in-up">
+                    <div class="cert-photo">
+                        <img src="images/Certified Public Speaking (CPS)-1.jpeg" alt="Certified Public Speaking (CPS)"
+                            class="cert-img"
+                            data-gallery="images/Certified Public Speaking (CPS)-1.jpeg,images/Certified Public Speaking (CPS)-2.jpeg,images/Certified Public Speaking (CPS)-3.jpeg,images/Certified Public Speaking (CPS)-4.jpeg,images/Certified Public Speaking (CPS)-5.mp4,images/Certified Public Speaking (CPS)-6.mp4">
+                    </div>
+                    <div class="cert-icon"><i class="ph ph-megaphone"></i></div>
+                    <span class="cert-year">2026</span>
+                    <h3>Certified Public Speaking (CPS)</h3>
+                    <p class="cert-issuer">LKP WellldoneSkills Nawara Pratama</p>
+                    <p class="cert-desc">Public Speaking Fundamentals, Effective Communication Techniques, Stage
+                        Mastery, Body Language, Vocal Power, and Presentation Skills.</p>
+                </div>
+                <!-- Cert 2 (2026) -->
+                <div class="cert-card glass-card fade-in-up delay-1">
+                    <div class="cert-photo">
+                        <img src="images/BNSP Digital Marketing Certification-1.jpeg" alt="BNSP Digital Marketing Certification"
+                            class="cert-img"
+                            data-gallery="images/BNSP Digital Marketing Certification-1.jpeg,images/BNSP Digital Marketing Certification-2.jpeg,images/BNSP Digital Marketing Certification-3.jpeg,images/BNSP Digital Marketing Certification-4.jpeg,images/BNSP Digital Marketing Certification-5.mp4,images/BNSP Digital Marketing Certification-6.mp4">
+                    </div>
+                    <div class="cert-icon"><i class="ph ph-rocket-launch"></i></div>
+                    <span class="cert-year">2026</span>
+                    <h3>BNSP Digital Marketing Certification</h3>
+                    <p class="cert-issuer">National Professional Certification Agency (BNSP)</p>
+                    <p class="cert-desc">Comprehensive Digital Marketing Strategy, SEO/SEM, Social Media Management,
+                        Analytics, Persuasive Copywriting, and Conversion-Based Campaign Optimization.</p>
+                </div>
+                <!-- Cert 3 (2024) -->
+                <div class="cert-card glass-card fade-in-up delay-2">
+                    <div class="cert-photo">
+                        <img src="images/Sertificate Microsoft Office-1.jpeg" alt="Microsoft Office Certificate"
+                            class="cert-img"
+                            data-gallery="images/Sertificate Microsoft Office-1.jpeg,images/Sertificate Microsoft Office-2.jpeg,images/Sertificate Microsoft Office-3.jpeg,images/Sertificate Microsoft Office-4.jpeg,images/Sertificate Microsoft Office-5.mp4,images/Sertificate Microsoft Office-6.mp4">
+                    </div>
+                    <div class="cert-icon"><i class="ph ph-microsoft-word-logo"></i></div>
+                    <span class="cert-year">2024</span>
+                    <h3>Microsoft Office Certificate</h3>
+                    <p class="cert-issuer">Borju Digital & Digital Course LKP</p>
+                    <p class="cert-desc">Data Management, Administrative Reporting, Professional Documentation,
+                        Presentation Development, & Digital Office Operations.</p>
+                </div>
+                <!-- Cert 4 (2024) -->
+                <div class="cert-card glass-card fade-in-up">
+                    <div class="cert-photo">
+                        <img src="images/Sertificate Digital Marketing Copywriting-1.jpeg"
+                            alt="Digital Marketing Certificate: Copywriting" class="cert-img"
+                            data-gallery="images/Sertificate Digital Marketing Copywriting-1.jpeg,images/Sertificate Digital Marketing Copywriting-2.jpeg,images/Sertificate Digital Marketing Copywriting-3.jpeg,images/Sertificate Digital Marketing Copywriting-4.jpeg,images/Sertificate Digital Marketing Copywriting-5.mp4,images/Sertificate Digital Marketing Copywriting-6.mp4">
+                    </div>
+                    <div class="cert-icon"><i class="ph ph-pen-nib"></i></div>
+                    <span class="cert-year">2024</span>
+                    <h3>Digital Marketing Certificate: Copywriting</h3>
+                    <p class="cert-issuer">Belajar Skill</p>
+                    <p class="cert-desc">Copywriting, Content Writing, Basic SEO, Social Media Marketing, Promotional
+                        Content Creation, Branding Strategy, & Digital Campaigns.</p>
+                </div>
+                <!-- Cert 5 (2021) -->
+                <div class="cert-card glass-card fade-in-up delay-1">
+                    <div class="cert-photo">
+                        <img src="images/Microsoft Office Admin Kantor-1.jpeg" alt="Microsoft Office Admin Kantor"
+                            class="cert-img"
+                            data-gallery="images/Microsoft Office Admin Kantor-1.jpeg,images/Microsoft Office Admin Kantor-2.jpeg,images/Microsoft Office Admin Kantor-3.jpeg,images/Microsoft Office Admin Kantor-4.jpeg,images/Microsoft Office Admin Kantor-5.mp4,images/Microsoft Office Admin Kantor-6.mp4">
+                    </div>
+                    <div class="cert-icon"><i class="ph ph-desktop"></i></div>
+                    <span class="cert-year">2021</span>
+                    <h3>Microsoft Office Admin</h3>
+                    <p class="cert-issuer">Sans Smart</p>
+                    <p class="cert-desc">Office Administration, Excel Data Processing, Letters & Documents, Digital
+                        Archives, Reports, & Google Workspace.</p>
+                </div>
+                <!-- Cert 6 (2020) -->
+                <div class="cert-card glass-card fade-in-up delay-2">
+                    <div class="cert-photo">
+                        <img src="images/Sertifikat Beladiri Ijazah Karate-1.jpeg" alt="Karate Martial Arts Certificate"
+                            class="cert-img"
+                            data-gallery="images/Sertifikat Beladiri Ijazah Karate-1.jpeg,images/Sertifikat Beladiri Ijazah Karate-2.jpeg,images/Sertifikat Beladiri Ijazah Karate-3.jpeg,images/Sertifikat Beladiri Ijazah Karate-4.jpeg,images/Sertifikat Beladiri Ijazah Karate-5.mp4,images/Sertifikat Beladiri Ijazah Karate-6.mp4">
+                    </div>
+                    <div class="cert-icon"><i class="ph ph-shield-chevron"></i></div>
+                    <span class="cert-year">2020</span>
+                    <h3>Karate Martial Arts Certificate</h3>
+                    <p class="cert-issuer">PT. Provices Group</p>
+                    <p class="cert-desc">Self-Defense Techniques, Physical & Mental Endurance, Reflexes, & Basic Fast
+                        Conflict Management.</p>
+                </div>
+                <!-- Cert 7 (2019) -->
+                <div class="cert-card glass-card fade-in-up">
+                    <div class="cert-photo">
+                        <img src="images/Sertifikat Ijazah Gada Pratama-1.jpeg" alt="Gada Pratama Certificate"
+                            class="cert-img"
+                            data-gallery="images/Sertifikat Ijazah Gada Pratama-1.jpeg,images/Sertifikat Ijazah Gada Pratama-2.jpeg,images/Sertifikat Ijazah Gada Pratama-3.jpeg,images/Sertifikat Ijazah Gada Pratama-4.jpeg,images/Sertifikat Ijazah Gada Pratama-5.mp4,images/Sertifikat Ijazah Gada Pratama-6.mp4">
+                    </div>
+                    <div class="cert-icon"><i class="ph ph-shield-check"></i></div>
+                    <span class="cert-year">2019</span>
+                    <h3>Gada Pratama Certificate</h3>
+                    <p class="cert-issuer">PT. Evan Putra Jaya</p>
+                    <p class="cert-desc">Basic Security, Security Procedures, Guest Access, Field Problem Solving,
+                        Teamwork, Discipline & SOP.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Contact Me</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in-up">
+                    <div class="contact-item glass-panel"
+                        onclick="window.open('https://maps.google.com/?q=Jl.+Babelan,+Kel.+Bahagia,+Bekasi,+West+Java', '_blank')"
+                        style="cursor: pointer;">
+                        <i class="ph-fill ph-map-pin"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Jl. Babelan, Kel. Bahagia, Bekasi, West Java</p>
+                        </div>
+                    </div>
+                    <div class="contact-item glass-panel" onclick="window.open('https://wa.me/6285888102696', '_blank')"
+                        style="cursor: pointer;">
+                        <i class="ph-fill ph-whatsapp-logo"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+62 858-8810-2696</p>
+                        </div>
+                    </div>
+                    <div class="contact-item glass-panel"
+                        onclick="window.location.href='mailto:richardpl.meha@gmail.com'" style="cursor: pointer;">
+                        <i class="ph-fill ph-envelope-simple"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:richardpl.meha@gmail.com"
+                                    onclick="event.stopPropagation()">richardpl.meha@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item glass-panel"
+                        onclick="window.open('https://www.linkedin.com/in/richard-patung-landu-meha-9099a3259', '_blank')"
+                        style="cursor: pointer;">
+                        <i class="ph-fill ph-linkedin-logo"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/richard-patung-landu-meha-9099a3259" target="_blank"
+                                    onclick="event.stopPropagation()">linkedin.com/in/richard-patung-landu-meha</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Richard Patung Landu Meha. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Image/Video Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="image-modal-close" id="modalClose">&times;</span>
+        <div class="modal-nav prev" id="modalPrev"><i class="ph ph-caret-left"></i></div>
+        <div id="modalMediaContainer"
+            style="display:flex; justify-content:center; align-items:center; width:100%; height:100%; position:relative;">
+            <img class="image-modal-content" id="modalImage" alt="Full View">
+            <video class="image-modal-content" id="modalVideo" controls autoplay
+                style="display:none; outline:none; max-width:90%; max-height:85vh; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.5);"></video>
+        </div>
+        <div class="modal-nav next" id="modalNext"><i class="ph ph-caret-right"></i></div>
+        <div class="modal-counter" id="modalCounter"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
